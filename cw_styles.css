@@ -32,6 +32,9 @@ body footer{
    color: white;
    background-color: rgb(101, 101, 101);
    font-size: 0.8em;
+   text-align: center;
+   padding-top: 1px;
+   padding-bottom: 1px;
 }
 
 
@@ -46,7 +49,7 @@ body > header > h1{
    font-family: Limelight, cursive;
    margin: 0px;
 }
-h1 span :last-of-them{
+h1 span:last-of-them{
    color: rgba(255, 255, 255, 0.4);
 }
 
@@ -77,18 +80,44 @@ nav#outline > ol{
    line-height: 2em;
    margin-bottom: 0px;
    margin-top: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style-type: upper-roman;
+}
+nav#outline > ol ol{
+   list-style-type: upper-alpha;
+}
+nav#outline a:visited, link{
+   color: rgb(101, 101, 101)
+}
+nav#outline a:hover, nav#outline a:active{
+   color: rgb(97, 97, 211);
+   text-decoration-line: underline;
 }
 
 
 /* Section Styles */
-
-
-
+section{
+   background-color: rgb(220, 220, 220);
+}
+section header h1{
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 /* Article Styles */
-
-
-
-
+article h2{
+   font-size: 1.4em;
+}
+article > p:first-of-type::first-letter{
+   font-size: 2em;
+   vertical-align: baseline;
+}
 /* Aside Styles */
-
+aside{
+   font-size: 0.9em;
+}
+aside h1{
+   font-size: 1.4em;
+   text-align: center;
+}
